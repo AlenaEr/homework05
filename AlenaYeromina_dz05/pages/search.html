@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+    <h1>Auto search</h1>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <label for="body_type">body type:</label>
+        <select id="body_type" name="body_type">
+            <option value="sedan">sedan</option>
+            <option value="suv">suv</option>
+            <option value="hatchback">hatchback</option>
+        </select><br>
+        <label for="brand">car brand:</label>
+        <input type="text" id="brand" name="brand"><br>
+        <label for="country">country:</label>
+        <select id="country" name="country">
+            <option value="ukraine">Ukraine</option>
+            <option value="usa">usa</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>s
+        </select><br>
+        <label for="price_from">price from:</label>
+        <input type="number" id="price_from" name="price_from"><br>
+        <label for="price_to">price to:</label>
+        <input type="number" id="price_to" name="price_to"><br>
+        <label for="year_from">Year of production from:</label>
+        <input type="number" id="year_from" name="year_from"><br>
+        <label for="year_to">Year of production from to:</label>
+        <input type="number" id="year_to" name="year_to"><br>
+        <input type="submit" value="search...">
+    </form>
+</body>
+</html>
