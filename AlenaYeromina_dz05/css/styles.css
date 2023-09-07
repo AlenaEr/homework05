@@ -55,4 +55,12 @@ a {
     display: block;
     text-align: center;
     margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 21 */
+a:hover {
+    color: #A11414;
+    text-decoration: underline;
 }
