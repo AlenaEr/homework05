@@ -11,7 +11,13 @@ body {
 
 }
 
-h1 {text-transform: uppercase;}
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold; /* make text bold */
+    text-align: center; /* center text horizontally */
+    padding-top: 60px;
+}
 
 input[type="submit"] {
     background-image: url("../images/luxury_car_button.svg");
@@ -43,4 +49,10 @@ input[type="submit"] {
 
 h1, form, a {
     margin: 10px; /* Додатковий відступ для тексту, форми та посилання */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
