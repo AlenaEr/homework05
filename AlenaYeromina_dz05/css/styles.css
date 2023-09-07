@@ -6,11 +6,13 @@ body {
     color: darkred;
 }
 
+/* 10 */
 .index{
     background-image: url("../images/welcome_page.jpeg");
 
 }
 
+/* 1 */
 h1 {
     text-transform: uppercase;
     font-size: 3rem;
@@ -19,6 +21,7 @@ h1 {
     padding-top: 60px;
 }
 
+/* 11 */
 input[type="submit"] {
     background-image: url("../images/luxury_car_button.svg");
     background-size: contain;
@@ -32,6 +35,7 @@ input[type="submit"] {
     font-size: 1rem;
 }
 
+/* 10 */
 .wrapper {
     width: 50%;
     background-color: rgba(255, 228, 196, 0.4);
@@ -47,10 +51,12 @@ input[type="submit"] {
     font-size: 1.5rem;
 }
 
+/* 3 */
 h1, form, a {
     margin: 10px; /* Додатковий відступ для тексту, форми та посилання */
 }
 
+/* 1 */
 a {
     display: block;
     text-align: center;
@@ -59,7 +65,7 @@ a {
     color: black;
 }
 
-/* 21 */
+/* 11 */
 a:hover {
     color: #A11414;
     text-decoration: underline;
