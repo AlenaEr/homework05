@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
@@ -8,67 +7,88 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-
 <body>
     <div class="wrapper">
         <h1>Auto search</h1>
         <form action="https://fom.in.ua/echo" method="POST">
-            <label for="body_type">body type:</label>
-            <select id="body_type" name="body_type">
-                <option value="sedan">sedan</option>
-                <option value="suv">suv</option>
-                <option value="hatchback">hatchback</option>
-            </select><br>
-            <label for="brand">car brand:</label>
-            <input type="text" id="brand" name="brand"><br>
-            <label for="country">country:</label>
-            <select id="country" name="country">
-                <option value="ukraine">Ukraine</option>
-                <option value="usa">usa</option>
-                <option value="germany">Germany</option>
-                <option value="japan">Japan</option>s
-            </select><br>
-            <label for="price_from">price from:</label>
-            <input type="number" id="price_from" name="price_from"><br>
-            <label for="price_to">price to:</label>
-            <input type="number" id="price_to" name="price_to"><br>
-            <label for="year_from">Year of production from:</label>
-            <input type="date" id="year_from" min="2011-01-01" max="2024-01-01" /> <br><br>
-            <label for="year_to">Year of production from to:</label>
-            <input type="date" id="year_to" min="2011-01-01" max="2024-01-01" /> <br><br>
-            <label for="condition">condition:</label><br>
-            <label for="bit">
-                <input type="checkbox" id="bit" name="options[]" value="bit"> bit </label><br />
-            <label for="in-credit">
-                <input type="checkbox" id="in-credit" name="options[]" value="in-credit"> in-credit </label><br />
-            <label for="not_in-credit">
-                <input type="checkbox" id="not_in-credit" name="options[]" value="not_in-credit"> not in-credit
-            </label><br />
-            <label for="cleared">
-                <input type="checkbox" id="cleared" name="options[]" value="cleared"> cleared </label><br />
-            <label for="new">
-                <input type="checkbox" id="new" name="options[]" value="new"> new </label><br /><br />
-            <label for="type_of_gearbox">Type of gearbox:</label><br>
-            <label for="automatic">
-                <input type="checkbox" id="automatic" name="options[]" value="automatic"> automatic </label><br />
-            <label for="manual">
-                <input type="checkbox" id="manual" name="options[]" value="manual"> manual </label><br>
-            <label for="semi-automatic">
-                <input type="checkbox" id="semi-automatic" name="options[]" value="manual_auto"> semi-automatic
-            </label><br /><br />
-            <div class="color">
-                <p>
+            <div class="form__item">
+                <label for="body_type">body type:</label>
+                <input type="radio" name="body_type" value="sedan"> sedan </label>
+                <label>
+                    <input type="radio" name="body_type" value="suv"> suv </label>
+                <label>
+                    <input type="radio" name="body_type" value="hatchback"> hatchback </label>
+            </div>
+            <div class="form__item">
+                <label for="brand">brand:</label>
+                <select id="brand" name="brand">
+                    <option value="bmw">bmw</option>
+                    <option value="mercedes">mercedes</option>
+                    <option value="honda">honda</option>
+                    <option value="mazda">mazda</option>
+                    <option value="toyota">toyota</option>s
+                </select>
+            </div>
+            <div class="form__item">
+                <label for="country">country:</label>
+                <select id="country" name="country">
+                    <option value="ukraine">Ukraine</option>
+                    <option value="usa">Spain</option>
+                    <option value="germany">Germany</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </div>
+            <div class="form__item">
+                <label for="price_from">price from:</label>
+                <input type="number" id="price_from" name="price_from" min="1000" max="100000">
+                <label for="price_to">price to:</label>
+                <input type="number" id="price_to" name="price_to" min="1000" max="100000">
+            </div>
+            <div class="form__item">
+                <label for="year_from">year of production from:</label>
+                <input type="date" id="year_from" min="2011-01-01" max="2024-01-01" />
+                <label for="year_to">year of production to:</label>
+                <input type="date" id="year_to" min="2011-01-01" max="2024-01-01" />
+            </div>
+            <div class="form__item">
+                <label for="condition">condition:</label><br />
+                <label for="bit">
+                    <input type="checkbox" id="bit" name="options[]" value="bit"> bit </label>
+                <label for="in-credit">
+                    <input type="checkbox" id="in-credit" name="options[]" value="in-credit"> in-credit </label>
+                <label for="not_in-credit">
+                    <input type="checkbox" id="not_in-credit" name="options[]" value="not_in-credit"> not in-credit
+                </label><br />
+                <label for="cleared">
+                    <input type="checkbox" id="cleared" name="options[]" value="cleared"> cleared </label>
+                <label for="new">
+                    <input type="checkbox" id="new" name="options[]" value="new"> new </label>
+            </div>
+            <div class="form__item">
+                <label for="type_of_gearbox">type of gearbox:</label>
+                <label for="automatic">
+                    <input type="checkbox" id="automatic" name="options[]" value="automatic"> automatic </label>
+                <label for="manual">
+                    <input type="checkbox" id="manual" name="options[]" value="manual"> manual </label>
+                <label for="semi-automatic">
+                    <input type="checkbox" id="semi-automatic" name="options[]" value="manual_auto"> semi-automatic </label>
+            </div>
+            <div class="form__item">
                     <label> color <input type="color" name="color" /></label>
-                </p>
-            </div><br />
-            <label for="fuel_type">Fuel type</label><br>
-            <label for="gasoline">
-                <input type="checkbox" id="gasoline" name="options[]" value="gasoline"> gasoline </label><br />
-            <label for="diesel">
-                <input type="checkbox" id="diesel" name="options[]" value="diesel"> diesel </label><br>
-            <label for="electric">
-                <input type="checkbox" id="electric" name="options[]" value="electric"> electric </label><br /><br />
-            <input type="submit" value="search...">
+            </div>
+            <div class="form__item">
+                <label for="fuel_type">fuel type</label><br>
+                <label for="gasoline">
+                    <input type="checkbox" id="gasoline" name="options[]" value="gasoline"> gasoline </label>
+                <label for="diesel">
+                    <input type="checkbox" id="diesel" name="options[]" value="diesel"> diesel </label>
+                <label for="electric">
+                    <input type="checkbox" id="electric" name="options[]" value="electric"> electric </label>
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="search..." >
+            </div>
+            <!-- <input type="submit" value="search..."> -->
             <a href="../index.html">Home page</a>
         </form>
     </div>
